@@ -19,7 +19,9 @@
 				<div class="chat_room">
 					<div class="room_header">
 						<span class="room_header_title">D-bot</span>
-						<img src="check_box.jpg" class="close_chat_mark" alt="close_chat">
+						<button class="close_chat_btn" type="button">
+							<img src="check_box.jpg" class="close_chat_mark" alt="close_chat">
+						</button>
 					</div>
 					<div class ="introduction">
 						<img src="d-bot.png" class="avatar" alt="chat_bot_icon">
@@ -34,11 +36,16 @@
 				<div class ="input_area">
 					<label for="answerField"></label>
 					<input type="text" id="answerField" class="answerField" placeholder="Ask a question">
-					<button class="answerSubmit" type="button" disabled>add image</button>
+					<button class="answerSubmit_btn" type="submit" disabled>
+						click
+						<!--<img src="enter_send.jpg" class="send_msg_icon" alt="send_message_icon">-->
+					</button>
 				</div>
 			</div>
 			
 		</section>
+		
+		<script src="main.js"></script>
 	</body>
 
 </html>
