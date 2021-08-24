@@ -17,31 +17,32 @@ section{
 	max-width: 1100px;
 	margin: auto;
 	text-align: center;
-	
 }
 .chat_btn {
 	background-color:transparent;
 	position: fixed;
-	right: 0.5vw;
-	bottom: 0.5vh;
+	right: 1.2vw;
+	bottom: 1.2vh;
 	opacity: 0.9;
 }
 .chat_btn:hover{
 	opacity:1;
 }
 .chat_popup{
-	/*display:none;*/
+	display:none;
 	position: fixed;
 	right: 1vw;
 	bottom: 1vh;
 	width:420px;
 	height:680px;
 	background-color: #fedcbd;
-	display:flex;
 	flex-direction:column;
 	justify-content: space-between;
 	border-radius: 10px;
 	box-shadow: 0px 1px 5px 5px rgba(0,0,0,0.2);
+}
+.show{
+	display:flex;
 }
 .chat_room{
 	height:80%;
@@ -59,24 +60,26 @@ section{
 	display:flex;
 	align-items:center;
 	justify-content:space-between;
-	
 }
 .room_header_title{
 	font-size: 30px;
 	margin-left: 174px;
 	color: #3e4038;
 }
-.close_chat_mark{
+.close_chat_btn{
 	width: 30px;
 	height: 30px;
 	margin-right: 16px;
+}
+.close_chat_mark{
+	width: 30px;
+	height: 30px;
 }
 .introduction{
 	display:flex;
 	flex-direction:column;
 	align-items:center;
 }
-
 .introduction_sentence{
 	width: 60%;
 	font-size: 26px;
@@ -86,16 +89,17 @@ section{
 	display:flex;
 	align-items:center;
 }
-
 .income-msg .msg{
 	margin-left: 10px;
 	background-color:white;
 	color: #777a6c;
+	margin: 0.75rem;
 	padding: 0.5rem;
 	border-radius: 4px;
+	box-shadow: 0 1px 4px rgba(0,0,0,0.4);
 }
 .input_area{
-	height:9%;
+	height:10%;
 	display:flex;
 	justify-content:center;
 }
@@ -103,11 +107,35 @@ section{
 	width: 100%;
 	padding: 1rem;
 	border: none;
-	box-shadow: 0px 0px 0px 2px rgba(0,0,0,0.1);
+	box-shadow: 0px 0px 4px 1.5px rgba(0,0,0,0.1);
 	border-radius: 5px;
 	font-size: 25px;
 }
-.answerSubmit{
-	
+.answerSubmit_btn{
+	position:absolute;
+	right: 6px;
+	bottom: 10px;
+	width: 50px;
+	height:50px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 4px 1.5px rgba(0,0,0,0.1);
 }
-
+.send_msg_icon{
+	width: 50px;
+	height:50px;
+	opacity: 0.8;
+}
+.out-msg{
+	display:flex;
+	justify-content:flex-end;
+	align-items: center;
+}
+.my-msg{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0.75rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.4);
+    word-break: break-all;
+}
